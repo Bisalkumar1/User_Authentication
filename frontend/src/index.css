@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../src/Images/backimg3.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 100vh;
+}
+.circleload{
+ 
+    height: 150px;
+    width: 150px;
+    border-top: 15px solid black;
+    border-bottom: 15px solid rgb(7, 187, 247);
+    border-left: 15px solid rgb(7, 187, 247);
+    border-right: 15px solid black;
+    border-radius: 50% ;
+    animation: roundcircle 2s linear infinite;
+
+}
+
+@keyframes roundcircle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.login-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:20%;
+   
+}
+.login-page{
+    width: 300px;
+   gap: 50px;
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2); /* Added box shadow */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-top-left-radius :20px;
+    border-bottom-right-radius :20px;
+    border: 1px solid rgba(32, 28, 28, 0.18);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px;
+ 
+}
+
+input{
+    outline: none;
+    padding: 5px;
+    width: 100%;
+    border: none;
+  border-bottom: 3px solid rgb(239, 87, 41);
+  border-radius: 10px;
+}
+
+label{
+    font-weight: 700;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+.btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.password-container{
+    position: relative;
+}
+
+.eye-icon{
+    position: absolute;
+    right: 0.5rem;
+    bottom: -10%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.eye-icon1{
+    position: absolute;
+    right: 2rem;
+    bottom: 26%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
