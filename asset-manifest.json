@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/User_Authentication/static/css/main.f116f5be.css",
+    "main.js": "/User_Authentication/static/js/main.df40a612.js",
+    "static/media/backimg3.avif": "/User_Authentication/static/media/backimg3.46a66c6bff5ae295eb5c.avif",
+    "index.html": "/User_Authentication/index.html",
+    "main.f116f5be.css.map": "/User_Authentication/static/css/main.f116f5be.css.map",
+    "main.df40a612.js.map": "/User_Authentication/static/js/main.df40a612.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f116f5be.css",
+    "static/js/main.df40a612.js"
+  ]
+}
