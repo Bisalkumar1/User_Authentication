@@ -57,22 +57,26 @@ const registerUser = async (req, res) => {
 
 const loginUser = async (req, res) => {
   try {
+    console.log("inside login");
     const { email, password } = req.body;
 
     if (!password && !email) {
+      console.log("if not password or email",password,email);
       return res
         .status(400)
         .json({ message: "email and password both are required" });
     }
-
+ console.log(password,email);
     const user = await User.findOne({ email });
 
     if (!user) {
+      console.log("Not user");
       return res.status(404).json({
         message: "User does not exists, register as new user or sign up",
       });
     }
 
+    console.log("user",user);
     const isPasswordValid = await user.isPasswordCorrect(password);
 
     if (!isPasswordValid) {
